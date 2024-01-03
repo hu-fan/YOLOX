@@ -22,11 +22,14 @@ class Exp(MyExp):
         self.enable_mixup = False
 
         # Define yourself dataset path
-        self.data_dir = "datasets/coco128"
-        self.train_ann = "instances_train2017.json"
-        self.val_ann = "instances_val2017.json"
+        # self.data_dir = "datasets/coco128"
+        self.data_dir = "/home/fanhu/Desktop/AMD_Competition/datasets/aistudio_wisdomguide/WisdomGuide"
+        # self.train_ann = "instances_train2017.json"
+        self.train_ann = "/home/fanhu/Desktop/AMD_Competition/datasets/aistudio_wisdomguide/WisdomGuide/annotations/instance_train.json"
+        # self.val_ann = "instances_val2017.json"
+        self.val_ann = "/home/fanhu/Desktop/AMD_Competition/datasets/aistudio_wisdomguide/WisdomGuide/annotations/instance_val.json"
 
-        self.num_classes = 71
+        self.num_classes = 5
 
     def get_model(self, sublinear=False):
 
