@@ -119,6 +119,7 @@ def main(exp: Exp, args):
 
 
 if __name__ == "__main__":
+    torch.backends.cudnn.enabled = False
     configure_module()
     args = make_parser().parse_args()
     exp = get_exp(args.exp_file, args.name)

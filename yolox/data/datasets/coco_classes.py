@@ -85,9 +85,9 @@
 #     "toothbrush",
 # )
 COCO_CLASSES = (
-  "no light",
-  "block",
   "blind_path",
-  "red_light",
   "green_light",
+  "block",
+  "no_light",
+  "red_light",
 )

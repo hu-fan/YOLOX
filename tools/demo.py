@@ -314,6 +314,7 @@ def main(exp, args):
 
 
 if __name__ == "__main__":
+    torch.backends.cudnn.enabled = False
     args = make_parser().parse_args()
     exp = get_exp(args.exp_file, args.name)
 
